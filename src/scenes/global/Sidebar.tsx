@@ -18,8 +18,6 @@ import TimelineOutlinedIcon from '@mui/icons-material/TimelineOutlined'
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined'
 import MapOutlinedIcon from '@mui/icons-material/MapOutlined'
 
-type Props = {}
-
 type MenuProps = {
   title: string
   to: string
@@ -44,7 +42,7 @@ const Item = ({ title, to, icon, selected, setSelected }: MenuProps) => {
   )
 }
 
-const Sidebar = (props: Props) => {
+const Sidebar = () => {
   const theme = useTheme()
   const colors = tokens(theme.palette.mode)
   const [isCollapsed, setIsCollapsed] = useState(false)
